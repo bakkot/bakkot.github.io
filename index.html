@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>about:bakkot</title>
+<style>
+  :root {
+    --text-color: #404040;
+  }
+  body {
+    font-family: system,-apple-system,system-ui,BlinkMacSystemFont,sans-serif;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    max-width: 50rem;
+    margin: 0 auto 0 auto;
+  }
+  header {
+    text-align: center;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .content {
+    margin-top: 4rem;
+  }
+  summary {
+    cursor: pointer;
+  }
+  a {
+    color: var(--text-color);
+    /*text-decoration: underline;*/
+    /*text-decoration-style: dotted;*/
+    /*border-bottom: .1rem dotted var(--text-color);*/
+  }
+  a:hover,
+  a:focus {
+    /*text-decoration: underline;*/
+    /*text-decoration-style: solid;*/
+    /*border-bottom: .1rem solid var(--text-color);*/
+  }
+  h3 > a {
+    text-decoration: none;
+  }
+  h3 > a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<header>
+  <h1>about:bakkot</h1>
+  <p>Some stuff I've worked on. More organized than my <a href="https://github.com/bakkot/">Github profile</a>, maybe.</p>
+  <p>In no particular order.</p>
+</header>
+
+<div class="content">
+  <h3><a href="https://github.com/tc39/ecma262">ECMA-262</a></h3>
+  <p>The JavaScript specification. I have been serving as editor since 2020.</p>
+  <details>
+    <summary>More details</summary>
+    <p>As part of my editorship I took over maintainence of <b><a href="https://github.com/tc39/ecmarkup/">ecmarkup</a></b>, the tool used to produce the specification. Among other things, I added support for <a href="https://tc39.es/ecma262/multipage/">multipage builds</a>.</p>
+    <p>With a co-editor, I <b><a href="https://github.com/tc39/ecma262/pull/2271">reorganized certain kinds of algorithm</a></b> to make them easier to follow.</p>
+    <p>I've been trying to remove inconsistencies and underspecifications more generally. For example, I championed <b><a href="https://github.com/tc39/proposal-for-in-order">a proposal to nail down property enumeration order</a></b> in common cases.</b></p>
+    <p>In pursuit of filling out some of the missing basic functionality in the standard library, I championed the addition of <b><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries">Object.fromEntries</a></b>.</p>
+    <p>I also build <b><a href="https://bakkot.github.io/test262-web-runner/">a web-based runner for the test262</a></b>, the official test suite for JavaScript implementations.</p>
+  </details>
+
+  <h3><a href="https://shift-ast.org/">Shift-AST tools for JS</a></h3>
+  <p>On behalf of my employer, I've substantially contributed to our suite of open-source JS tooling. Not as mature as Babel, but nicer in several ways. Also available in Java, unlike Babel. I'm particularly fond of <b><a href="https://github.com/shapesecurity/shift-shrink-js">shift-shrink-js</a></b>, an automatic test case minimizer for JavaScript ASTs.</p>
+
+  <h3><a href="https://github.com/bakkot/transcribe-to-gdocs">transcribe-to-gdocs</a></h3>
+  <p>A tool to write live transcriptions of your audio input to a Google Doc so they can be fixed up by a human in real time. (Other transcription tools do not output to a human-editable document in real time.) Useful for taking precise notes at meetings, if you have dedicated notetakers. Would be a lot more useful if Google's Cloud Speech API was more accurate, but it's better than nothing.</p>
+
+  <h3><a href="https://github.com/bakkot/matrix-archive-bot">matrix-archive-bot</a></h3>
+  <p>Makes human-readable logs for Matrix channels. I also <a href="https://matrixlogs.bakkot.com/">host logs</a> for web-platform matrix channels.</p>
+
+  <h3><a href="https://github.com/bakkot/slack-archive-bot">slack-archive-bot</a></h3>
+  <p>Logs for Slack. Text based, but human readable.</p>
+
+  <h3><a href="https://reddit-thread.glitch.me/">reddit-thread</a></h3>
+  <p>Loads the full comments page for a reddit thread without having to click "load more" fifty times.</p>
+
+  <h3><a href="https://github.com/bakkot/dfa-lib">dfa-lib</a> and <a href="https://github.com/bakkot/cfgrammar-tool">cfgrammar-tool</a></h3>
+  <p>Tools for working with regular and context-free languages in JS. These were mainly aimed at improving the experience in CS103 at Stanford when I was a TA there, both for students and, by automating certain grading tasks, for teachers. The tools remained in use for several years after I left.</p>
+  <p>Using dfa-lib I built <b><a href="https://bakkot.github.io/dfa-lib/regeq.html">a tool for checking equivalence of regular expressions</a></b>, including giving counterexamples when the expressions are not equivalent.</p>
+
+  <h3><a href="http://timer.bakkot.com/">timer.bakkot.com</a></h3>
+  <p>A web page which shows a timer without any other cruft. Not remotely technically interesting, but still useful.</p>
+</div>
